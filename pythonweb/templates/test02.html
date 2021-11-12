@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+	<style type="text/css">
+		canvas{
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="Canvas1" width="500px", height="600px"></canvas>
+
+	<script type="text/javascript">
+		let canvas = document.getElementById('Canvas1');
+		let gd = canvas.getContext("2d");
+
+		gd.moveTo(60, 400);
+		gd.lineTo(60, 100);
+		gd.lineTo(360, 100);
+		gd.lineTo(360, 100);
+		gd.closePath();
+		/*gd.strokeStyle = "red";
+		gd.lineWidth = 9;
+		
+		gd.fillStyle = "blue";
+		gd.fill();
+		gd.stroke()*/
+
+        gd.strokeStyle = "red";
+		gd.lineWidth = 9;
+		gd.stroke();
+
+        gd.fillStyle = "blue";
+		gd.fill();
+
+		
+
+	</script>
+</body>
+</html>

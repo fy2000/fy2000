@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>鼎科国际</title>
+	<style type="text/css">
+		.mycenter{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">鼎科战力统计</h1>
+    <hr />
+    <br />
+    
+    <div class="mycenter">
+		<form action="/login/" method="POST">
+			<p>
+				<legend><h3>用户登陆</h3></legend>
+			</p>
+			<p >
+				<span style="width:52px; display:inline-block;">用户名:</span>
+				<input type="text" name="username" required>
+			</p>
+			<p>
+				<span style="width:52px; display:inline-block;">密&nbsp;&nbsp;&nbsp;码:</span>
+				<input type="password" name="password" required>
+			</p>
+			
+			{%if errorinfo %}
+			<p style="color: red">{{errorinfo}}</p>
+			{% endif %}
+			<p>
+				<button type="submit">登陆</button>
+			</p>
+        </form>
+    </div>
+    
+</body>
+</html>
