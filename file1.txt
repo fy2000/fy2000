@@ -1,0 +1,4 @@
+{'age': 18, 'height': 158}
+{'age': 26, 'height': 160}
+{'age': 24, 'height': 167}
+{'age': 20, 'height': 170}
